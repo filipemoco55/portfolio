@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipe Moço - Portfolio</title>
+    <meta name="description" content="Portfolio de Filipe Moço - Full stack e UI/UX Designer">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <h1 class="preloader-text">FILIPE MOÇO</h1>
+    </div>
+
+    <!-- Background Effects -->
+    <canvas id="particles-canvas"></canvas>
+    <div class="vignette-glow"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation Overlay -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+    </button>
+    <div class="nav-overlay" id="nav-overlay">
+        <div class="nav-content">
+            <div class="nav-socials">
+                <p class="nav-label">SOCIAL</p>
+                <ul>
+                    <li><a href="https://github.com/filipemoco55" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/filipe-mo%C3%A7o55/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/filipe_moco/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="nav-links">
+                <p class="nav-label">MENU</p>
+                <ul>
+                    <li><a href="#home" class="nav-link"><span class="dot red"></span>Home</a></li>
+                    <li><a href="#about" class="nav-link"><span class="dot blue"></span>Sobre Mim</a></li>
+                    <li><a href="#stack" class="nav-link"><span class="dot teal"></span>A Minha Stack</a></li>
+                    <li><a href="#projects" class="nav-link"><span class="dot indigo"></span>Projetos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-contact">
+            <p class="nav-label">ENTRAR EM CONTATO</p>
+            <a href="mailto:filipemoco55@gmail.com">filipemoco55@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section-padding">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1 class="hero-title reveal-text">
+                        <span class="text-primary">FULL STACK &</span><br>
+                        <span class="indent">UI/UX DESIGNER</span>
+                    </h1>
+                    <p class="hero-description fade-up">
+                        Olá! Sou o <span class="highlight">Filipe Moço</span>. A tecnologia tem feito parte do meu
+                        caminho há vários anos. Construo projetos digitais versáteis, desde o backend até à interface.
+                    </p>
+                    <a href="mailto:filipemoco55@gmail.com" class="btn-primary fade-up">
+                        <span class="btn-bg"></span>
+                        <span class="btn-text">Vamos Conversar</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Decorative SVG Arrow -->
+            <svg class="hero-arrow" viewBox="0 0 376 111" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1V39.9286L188 110V70.6822L1 1Z" stroke="var(--primary-color)"></path>
+                <path d="M375 1V39.9286L188 110V70.6822L375 1Z" stroke="var(--primary-color)"></path>
+            </svg>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title fade-up">Acredito que esta evolução contínua me dá a versatilidade necessária
+                    para abraçar qualquer projeto digital, desde o backend até à interface.</h2>
+                <div class="about-grid">
+                    <div class="about-heading fade-up">
+                        <h3>Prazer,<br>sou o Filipe!</h3>
+                    </div>
+                    <div class="about-bio fade-up">
+                        <p>Com 23 anos, a tecnologia tem feito parte do meu caminho há vários anos. Comecei por
+                            construir bases sólidas no Curso Profissional de Técnico e Gestão de Programação de Sistemas
+                            Informáticos.</p>
+                        <p>Passei pelo CTeSP em Design e Tecnologias para Aplicações Móveis, e encontro-me agora a
+                            frequentar a Licenciatura em Tecnologias e Sistemas de Informação para a Web na ESMAD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack Section -->
+        <section id="stack" class="stack-section section-padding">
+            <div class="container">
+                <div class="stack-header fade-up">
+                    <h2 class="small-title">A Minha Stack</h2>
+                </div>
+                <div class="stack-grid">
+                    <div class="stack-category fade-up">
+                        <h3>SKILLS</h3>
+                    </div>
+                    <div class="stack-items fade-up">
+                        <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML</div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                        <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                        <div class="skill-item"><i class="fa-brands fa-vuejs"></i> Vue.js</div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i> MongoDB</div>
+                        <div class="skill-item"><i class="fa-solid fa-server"></i> phpMyAdmin</div>
+                        <div class="skill-item"><i class="fa-brands fa-docker"></i> Docker</div>
+                        <div class="skill-item"><i class="fa-solid fa-wind"></i> Tailwind</div>
+                        <div class="skill-item"><i class="fa-solid fa-bolt"></i> Vite</div>
+                        <div class="skill-item"><i class="fa-brands fa-figma"></i> Figma</div>
+                        <div class="skill-item"><i class="fa-solid fa-book"></i> Notion</div>
+                        <div class="skill-item"><i class="fa-brands fa-github"></i> GitHub</div>
+                        <div class="skill-item"><i class="fa-solid fa-bezier-curve"></i> Illustrator</div>
+                        <div class="skill-item"><i class="fa-solid fa-image"></i> Photoshop</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="projects-header fade-up">
+                    <h2 class="small-title">Projetos</h2>
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid fade-up">
+                    <!-- Ciclo Project Card -->
+                    <article class="project-card" data-category="uiux mobile">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/ciclo-app.jpg" alt="Ciclo - Recycling and Community App"
+                                class="project-img" loading="lazy">
+                            <span class="project-category-badge"><i class="fa-brands fa-figma"></i> UI/UX Design</span>
+                            <div class="project-image-overlay">
+                                <button class="btn-quick-view" data-modal-target="modal-ciclo"
+                                    aria-label="Ver detalhes de Ciclo">
+                                    <i class="fa-solid fa-expand"></i> Ver Detalhes
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-date">2026</span>
+                                <span class="project-type">Mobile App Concept</span>
+                            </div>
+                            <h3 class="project-title">Ciclo — Recycling & Community</h3>
+                            <p class="project-tagline">"A comunidade que se renova. Reciclar, conviver, doar."</p>
+                            <p class="project-description">
+                                Aplicação móvel focada na conscientização ambiental, doação comunitária e reciclagem
+                                interativa. Apresenta scanner inteligente de resíduos e integração comunitária.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">Mobile App</span>
+                                <span class="tag">Sustentabilidade</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://www.behance.net/gallery/242387701/Ciclo-Recycling-and-Community-App"
+                                    target="_blank" rel="noopener noreferrer" class="btn-card-action btn-behance">
+                                    <i class="fa-brands fa-behance"></i> Behance
+                                </a>
+                                <button class="btn-card-action btn-details" data-modal-target="modal-ciclo">
+                                    Detalhes <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Coming Soon Project Card -->
+                    <article class="project-card project-card-placeholder" data-category="all">
+                        <div class="placeholder-inner">
+                            <div class="placeholder-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3>Novos Projetos Em Breve</h3>
+                            <p>A desenvolver novas soluções web & mobile. Fique atento às próximas atualizações!</p>
+                            <span class="placeholder-badge">Em Desenvolvimento</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Detail Modal: Ciclo -->
+        <div class="modal" id="modal-ciclo" aria-hidden="true" role="dialog">
+            <div class="modal-overlay" data-close-modal></div>
+            <div class="modal-container">
+                <button class="modal-close" data-close-modal aria-label="Fechar Modal">&times;</button>
+                <div class="modal-body">
+                    <div class="modal-media">
+                        <img src="assets/images/ciclo-app.jpg"
+                            alt="Banner do projeto Ciclo - Recycling & Community App">
+                    </div>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-badge"><i class="fa-brands fa-behance"></i> Behance Showcase</span>
+                            <h2>Ciclo — Recycling & Community App</h2>
+                            <p class="modal-subtitle">Design de Interface & Experiência do Utilizador para
+                                Sustentabilidade Comunitária</p>
+                        </div>
+
+                        <div class="modal-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <div>
+                                    <strong>Objetivo Principal</strong>
+                                    <p>Conectar pessoas, incentivar a reciclagem correta e promover a economia circular
+                                        através da doação de bens.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-qrcode"></i>
+                                <div>
+                                    <strong>Scanner de Resíduos</strong>
+                                    <p>Scanner inteligente que orienta o utilizador na separação e descarte no ecoponto
+                                        correto.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                                <div>
+                                    <strong>Comunidade & Doações</strong>
+                                    <p>Rede para doação e reutilização de objetos entre vizinhos e membros da comunidade
+                                        local.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-details-grid">
+                            <div class="detail-box">
+                                <h4><i class="fa-solid fa-layer-group"></i> Categoria</h4>
+                                <p>UI/UX Mobile Design & Prototipagem</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fa-solid fa-wrench"></i> Ferramentas</h4>
+                                <p>Figma, Design System, Adobe Illustrator</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fa-solid fa-heart"></i> Slogan</h4>
+                                <p>"Reciclar, Conviver, Doar. Juntos fazemos a diferença."</p>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <a href="https://www.behance.net/gallery/242387701/Ciclo-Recycling-and-Community-App"
+                                target="_blank" rel="noopener noreferrer" class="btn-primary">
+                                <span class="btn-bg"></span>
+                                <span class="btn-text"><i class="fa-brands fa-behance"></i> Ver Projeto Completo no
+                                    Behance</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer / Contact -->
+        <footer class="footer section-padding">
+            <div class="container footer-container fade-up">
+                <h2 class="footer-title">Vamos Trabalhar Juntos</h2>
+                <a href="mailto:filipemoco55@gmail.com" class="footer-email text-primary">filipemoco55@gmail.com</a>
+                <div class="footer-socials mt-4">
+                    <a href="https://www.instagram.com/filipe_moco/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/filipemoco55" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/filipe-mo%C3%A7o55/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <p class="footer-copy">© 2026 Filipe Moço. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
